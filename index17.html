@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+  </head>
+  <body>
+      <style>
+          table{
+              border-collapse:collapse;
+              font-family:Arial, Helvetica, sans-serif;
+              color:#6e6f74;
+          }
+          thead{
+              color:#685e5c;
+              font-weight:bold;
+          }
+          tbody tr{
+              border-bottom: 1px solid #ddd;
+          }
+          th, td{
+              padding:20px;
+          }
+          tbody td:first-child{
+              color:#3e7589;
+          }
+          tbody tr:last-child{
+            border:0px;
+          }
+          tfoot{
+              text-align:center;
+          }
+          tfoot a{
+              display:inline-block;
+              text-decoration: none;
+              color:#aaa;
+              margin-right:10px;
+          }
+          tfoot .active{
+              color:white;
+              font-weight:bold;
+              background:#008cba;
+              padding:10px 15px 10px 15px;
+              border-radius:10px;
+          }
+          .selected{
+              background:#d9edf6
+          }
+          .error{
+            background:#f2dedf
+          }
+          h2{
+              widows: 50vw;
+              color:#b0aac2;
+          }
+          #t2_color1{
+              background:#dbe9d8;
+          }
+          #t2_color2{
+              background:#c2d4d8;
+
+          }
+          #t2_color3{
+            background:#f2efe8;
+
+          }
+          #t2_color4{
+            background:#b0aac2;
+          }
+      </style>
+    <table>
+      <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr class="selected">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <a href="#">first</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">last</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <h2>My own table</h2>
+    <table id="t2">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+                <th>Header 6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="t2_color1">
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 4</td>
+              <td>Content 5</td>
+              <td>Content 6</td>
+            </tr>
+            <tr id="t2_color2">
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 4</td>
+              <td>Content 5</td>
+              <td>Content 6</td>
+            </tr>
+            <tr id="t2_color3">
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 4</td>
+              <td>Content 5</td>
+              <td>Content 6</td>
+            </tr>
+            <tr id="t2_color4">
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 4</td>
+              <td>Content 5</td>
+              <td>Content 6</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6">
+                <a href="#">first</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">last</a>
+              </td>
+            </tr>
+          </tfoot>
+    </table>
+  </body>
+</html>
